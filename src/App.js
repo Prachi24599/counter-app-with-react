@@ -2,6 +2,20 @@ import { useState } from "react";
 import "./App.css";
 import "./index.css";
 function App() {
+  const [count, setCount] = useState(0);
+
+  function decrementHandler() {
+    setCount(count - 1);
+  }
+
+  function incrementHandler() {
+    setCount(count + 1);
+  }
+
+  function resetHandler() {
+    setCount(0);
+  }
+
   return (
     <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#344151] flex-col gap-10">
       <div className="text-[#0398d4] font-medium text-2xl">
