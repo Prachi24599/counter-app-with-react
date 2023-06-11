@@ -1,8 +1,8 @@
 import "./App.css";
-
+import "./index.css";
 function App() {
   return (
-    <div>
+    <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#344151] flex-col gap-10">
       <div>Increment && Decrement</div>
       <div>
         <button>-</button>
